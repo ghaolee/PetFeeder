@@ -1,0 +1,69 @@
+.block-button {
+  width: 100%;
+  height: 35px;
+  display: block;
+  background-color: #24bf84;
+  font-size: 22px;
+  color: white;
+}
+
+div {
+  font-size: 22px;
+}
+
+.label {
+  display: block;
+  float: left;
+}
+
+.status {
+  display: block;
+  float: right;
+}
+
+#fill-level-meter {
+  width: 75%;
+  height: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+meter::-webkit-meter-bar {
+  /* Let's animate this */
+  animation: animate-stripes 5s linear infinite;
+  background-image:
+    linear-gradient(
+      135deg,
+      transparent,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    );
+  background-size: 80px 45px;
+  box-shadow: 0 5px 5px -5px #333 inset;
+}
+@keyframes animate-stripes {
+  to { background-position: -50px 0; }
+}
+
+.input-text {
+  width: 50%;
+  height: 35px;
+  float: right;
+}
+
+.login-input {
+  display: block;
+  height: 50px;
+}
+
+h1 {
+  font-size: 80%;
+  text-align: center
+}
+
+.sliders {
+  width: 75%;
+  float: left;
+}

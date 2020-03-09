@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pet Feeder App</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/Stylesheet.css">
+  <script src="./resources/particle/particle.min.js"></script>
+</head>
+
+<body>
+  <!--LOGIN PAGE-->
+  <div id="login-page">
+    <h1 id="test1">Pet Feeder App - Log In</h1>
+    <div class="login">
+      <strong>Log In:</strong> <br>
+      <div class="login-input">
+        Username:
+        <input type="text" class="input-text">
+      </div>
+      <div> <br>
+        <span class="login-input">
+          Password:
+          <input type="text" class="input-text">
+        </span> <br>
+      </div>
+      <div class="button">
+        <button type="button" class="block-button" id="login-button">Log In</button>
+      </div> <br>
+      <div class="button">
+        <button type="button" class="block-button" id="create-user-button">Create New Account</button>
+      </div> <br>
+    </div>
+  </div>
+
+  <!--SIGNUP PAGE-->
+  <div id="signup-page" hidden=true>
+    <h1>Pet Feeder App - Sign Up</h1>
+    <strong>Sign Up:</strong> <br>
+    <div class="login-input">
+      Username:
+      <input type="text" class="input-text">
+    </div>
+    <div> <br>
+      <span class="login-input">
+        Password:
+        <input type="text" class="input-text">
+      </span> <br>
+    </div>
+    <div class="button">
+        <button type="button" class="block-button" id="signup-button">Sign Up</button>
+      </div> <br>
+  </div>
+
+  <!--MAIN PAGE-->
+  <div id="main-page" hidden=true>
+    <h1>Pet Feeder App - Main</h1>
+    <div class="button">
+      <button type="button" class="block-button" id="logout-button">Logout</button>
+    </div> <br>
+    <!--loading page information-->
+    <div id="loading-page" hidden=true>
+      <h1>LOADING DATA</h1>
+    </div>
+    <div id="loading-data" hidden=false>
+      <div class="status-whole">
+        <div>
+          <span class="label">Food Bowl Fill Level</span> <br> <br>
+          <meter id="fill-level-meter" value="50" min="0" max="100"></meter> <br>
+          <span class="label"><strong>Status: </strong></span> <br>
+          <span class="label" id="bowl-fault-status">No faults</span> <br>
+        </div>
+      </div> <br>
+      <div class="button">
+        <button type="button" class="block-button" id="feed-pet-button">Feed Pet 1 Serving</button>
+      </div> <br>
+      <div class="button">
+        <button type="button" class="block-button" id="settings">Initialize Settings</button>
+      </div>
+    </div>
+  </div>
+
+  <!--SETTINGS PAGE-->
+  <div id="settings-page" hidden=true>
+    <h1>Pet Feeder App - Settings</h1>
+    <div class="button">
+      <button type="button" class="block-button" id="back-button">Back</button>
+    </div> <br>
+    <div class="status-whole">
+      <span class="label"><strong>Initialize Bowl Fill Level Readings:</strong></span> <br> <br>
+      <span class="label">Place empty bowl on scale: </span> <br> <br>
+      <div class="button">
+        <button type="button" class="block-button" id="empty-bowl-button">Click Here Once Empty Bowl Is Set</button>
+      </div> <br>
+      <span class="label">Fill Bowl To Max With Pet Food</span> <br> <br>
+      <div class="button">
+        <button type="button" class="block-button" id="filled-bowl-button">Click Here Once Bowl Is Filled</button>
+      </div> <br>
+      <span class="label">Bowl Fill Level Is Now Initialized!</span>
+    </div> <br> <br>
+
+  </div>
+  <script src="js/PetModel.js"></script>
+  <script src="js/PetApp.js"></script>
+</body>
+</html>
