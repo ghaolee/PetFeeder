@@ -12,7 +12,7 @@
 * contains Cordova UI interface
 * css/js/html files are inside www/ folder
 
-## bonus items
+## items
 * the use of HX711ADC Weight Sensor
 * the use of Stepper Motor
 
